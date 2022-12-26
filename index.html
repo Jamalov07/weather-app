@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather-App</title>
+  </head>
+  <body>
+    <section class="wrapper" style="width: 100%">
+      <section class="clock" style="display: inline-block; margin: 40px">
+        <figure class="flipper">
+          <span class="icon icon-today">6</span>
+        </figure>
+        <figure class="flipper">
+          <span class="to-gradus-today">-17</span>
+        </figure>
+      </section>
+      <section
+        class="toggles"
+        style="
+          display: inline-block;
+          width: 900px;
+          margin: 10px;
+          position: relative;
+          margin-left: -600px;
+          bottom: -120px;
+        "
+      >
+        <figure class="toggle">
+          <span class="icon">1</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">2</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">3</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">4</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">5</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">6</span>
+        </figure>
+        <figure class="toggle">
+          <span class="icon">7</span>
+        </figure>
+      </section>
+
+      <div
+        class="forcity"
+        style="
+          display: inline;
+          position: relative;
+          padding: 0;
+          margin: 0;
+          top: -200px;
+          right: 200px;
+        "
+      >
+        <input
+          class="inputForCity"
+          type="text"
+          style="
+            border: 1px solid;
+            border-radius: 7px;
+            height: 30px;
+            background-color: #212311;
+            color: white;
+          "
+          placeholder="type something..."
+        />
+        <button
+          type="submit"
+          style="
+            border-radius: 7px;
+            border: 2px solid green;
+            height: 30px;
+            background-color: darkolivegreen;
+            width: 80px;
+          "
+          class="buttonForInput"
+        >
+          Qidiruv
+        </button>
+      </div>
+      <section
+        class="graph"
+        style="
+          display: inline-block;
+          position: relative;
+          left: -68px;
+          top: 50px;
+        "
+      >
+        <h1 class="h1-to-cityname">Amsterdam</h1>
+        <div class="days">
+          <span class="date" data-icon="1" data-degrees="18°">1</span>
+          <span class="date" data-icon="2" data-degrees="18°">2</span>
+          <span class="date" data-icon="3" data-degrees="16°">3</span>
+          <span class="date" data-icon="4" data-degrees="20°">4</span>
+          <span class="date" data-icon="5" data-degrees="25°">5</span>
+          <!-- <span class="6" data-icon="6" data-degrees="21°">S</span>
+          <span class="7" data-icon="7" data-degrees="18°">SU</span> -->
+        </div>
+        <hr />
+      </section>
+      <div
+        class="infos"
+        style="
+          position: relative;
+          top: -150px;
+          left: 1250px;
+          border: 4px solid #212311;
+          background-color: #181822;
+          width: 600px;
+          height: 280px;
+          border-radius: 7px;
+        "
+      >
+        <h1 class="to-city-name"><i>name:</i> Bekobod</h1>
+        <h1 class="to-country-code"><i>code:</i> US</h1>
+        <h1 class="to-time-zone"><i>time-zone:</i> America</h1>
+        <h1 class="to-lat"><i>latitute:</i> 12.12</h1>
+        <h1 class="to-lon"><i>longitude:</i> 34.45</h1>
+
+      </div>
+      <nav>
+        <button>
+          <span class="icon">-</span>
+        </button>
+      </nav>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
