@@ -21,7 +21,7 @@ buttonForInput.addEventListener("click", (event) => {
 
 async function getLatAndLong(cityName) {
   const JSONdata = await await fetch(
-    `http://api.positionstack.com/v1/forward?access_key=01c69c855e57282c9a9d54d8f2622fea&query=${cityName}`
+    `http://api.positionstack.com/v1/forward?access_key==${cityName}`
   );
   const data = (await JSONdata.json()).data[0];
   getWeather(data.latitude, data.longitude);
@@ -32,7 +32,7 @@ async function getWeather(lat, lon) {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "b86d65935emshfac0c5aa0138a5cp1be715jsn76e973ab2218",
+      "X-RapidAPI-Key": "",
       "X-RapidAPI-Host": "weatherbit-v1-mashape.p.rapidapi.com",
     },
   };
